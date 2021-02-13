@@ -47,7 +47,6 @@ button {
 .buttons {
     margin:auto;
     width:270px;
-    overflow: hidden;
 }
 
 .buttons li {
