@@ -25,7 +25,7 @@ document.addEventListener('keydown', control);
 
 
 function startGame() {
-    gravity=.15
+    gravity=.1
     birdBottom = 325
     birdLeft = 195
     score = 0
@@ -36,7 +36,7 @@ function startGame() {
     bird.style.bottom = "325px"
     bird.style.left = "195px"
     console.log("biiii", bird.style.bottom)
-    birdtimerId = setInterval(birdPos, 1)
+    birdtimerId = setInterval(birdPos, 10)
     genObstTimer = setInterval(genObstacle, 1200)
     
     gamePrompt.innerHTML = ""
@@ -44,7 +44,7 @@ function startGame() {
 }
 
 function birdPos() {
-    gravity+= .02;
+    gravity+= .08;
     birdBottom -= gravity**2;
     bird.style.bottom = birdBottom + "px";
     bird.style.left = birdLeft + "px";
@@ -77,11 +77,11 @@ function control(e){
 function jump() {
     if (birdBottom < 500) {
     birdBottom += 100;
-    gravity = .25;
+    gravity = .2;
     }
     else if (birdBottom < 600) {
         birdBottom += 600 - birdBottom;
-        gravity = .25;
+        gravity = .2;
     }
     console.log(birdBottom);
 }
@@ -123,7 +123,7 @@ function genObstacle() {
     let obstacleLeft = 450;
     let obstacleBottom = 145;
 
-    let obstacle2Bottom = variableHeight + 340;
+    let obstacle2Bottom = variableHeight + 350;
     let obstacle2Left = 450;
 
     const obstacle2 = document.createElement("div");
