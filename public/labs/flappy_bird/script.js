@@ -58,7 +58,7 @@ function control(e){
     console.log("cont entered", e.keyCode, " : ", isGameStart, isgameOver)
     if (e.keyCode === 32 && isGameStart === false && isgameOver === false) {
         startGame();
-        console.log("c1")
+        
     }
     if (e.keyCode === 13 && isGameStart === false && isgameOver === true){
         restartGame();
@@ -66,7 +66,7 @@ function control(e){
     }
     else if (e.keyCode === 32) {
         jump();
-        console.log("c2  ", isGameStart, isgameOver)
+        
     }
     if(e.keyCode === 27) {
         gameOver();
@@ -83,7 +83,7 @@ function jump() {
         birdBottom += 600 - birdBottom;
         gravity = .45;
     }
-    console.log(birdBottom);
+    
 }
 
 function genObstacle() {
@@ -143,9 +143,9 @@ function genObstacle() {
     obstacles = document.getElementsByClassName("obstacle");    
     obstTimerId = setInterval(moveObst, 20);
     obstIntervals.push(obstTimerId);
-    console.log("heya", parseInt(obstacles[0].style.left.substring(0, obstacles[0].style.left.length - 2)))
+    
     if (obstIntervals.length > 1 && parseInt(obstacles[0].style.left.substring(0, obstacles[0].style.left.length - 2)) < 190){
-        console.log(obstIntervals.length, "goddamn", score, parseInt(obstacles[0].style.left.substring(0, obstacles[0].style.left.length - 2)))
+        
         changeScore();
     }
     
@@ -158,7 +158,7 @@ function genObstacle() {
 }
 
 function changeScore() {
-    console.log("score incremented", obstIntervals.length, "goddamn", score, parseInt(obstacles[0].style.left.substring(0, obstacles[0].style.left.length - 2)))
+    
     score++
     scoreDisplay.innerHTML = score
 }
