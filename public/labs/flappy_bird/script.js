@@ -102,12 +102,12 @@ function genObstacle() {
             obstHeightInt = parseInt(obstacles[i].style.height.substring(0, obstacles[i].style.height.length - 2)) 
             obst2BottomInt = parseInt(obstacles[i].style.bottom.substring(0,obstacles[i].style.bottom.length - 2)) - 200
 
-            if (obstLeftInt > 115 && obstLeftInt < 255 && birdBottomCurrent < obstHeightInt && obstHeightInt != 1000) {
+            if (obstLeftInt > 115 && obstLeftInt < 255 && birdBottomCurrent < obstHeightInt && obstHeightInt != 500) {
                 gameOver()
                 console.log("Bottom End : ", obstacles.length, birdBottom + " : " + obstHeightInt + " : "+birdBottomCurrent, obst2BottomInt)
                 break
             }
-            if (obstLeftInt > 115 && obstLeftInt < 255 && birdBottomCurrent > obst2BottomInt && obstHeightInt === 1000) {
+            if (obstLeftInt > 115 && obstLeftInt < 255 && birdBottomCurrent > obst2BottomInt && obstHeightInt === 500) {
                 gameOver()
                 console.log("Top End  " + birdBottom + " : " + obst2BottomInt + " : "+birdBottomCurrent)
                 break 
@@ -129,7 +129,7 @@ function genObstacle() {
     const obstacle2 = document.createElement("div");
     const obstacle = document.createElement("div");
 
-    obstacle2.style.height = "1000px";
+    obstacle2.style.height = "500px";
     obstacle2.classList.add("obstacle");
     if (!isgameOver) display.appendChild(obstacle2);
     obstacle2.style.left = obstacle2Left + "px";
