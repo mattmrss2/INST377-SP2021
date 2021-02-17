@@ -10,7 +10,7 @@ const sky = document.querySelector(".sky");
 
 let birdBottom=325;
 let birdLeft=195;
-let gravity=.15;
+let gravity=.3;
 let scrollSpeed = 5;
 let birdtimerId = null 
 let isgameOver = false;
@@ -25,7 +25,7 @@ document.addEventListener('keydown', control);
 
 
 function startGame() {
-    gravity=.1
+    gravity=.3
     birdBottom = 325
     birdLeft = 195
     score = 0
@@ -36,7 +36,7 @@ function startGame() {
     bird.style.bottom = "325px"
     bird.style.left = "195px"
     console.log("biiii", bird.style.bottom)
-    birdtimerId = setInterval(birdPos, 10)
+    birdtimerId = setInterval(birdPos, 30)
     genObstTimer = setInterval(genObstacle, 1200)
     
     gamePrompt.innerHTML = ""
@@ -44,7 +44,7 @@ function startGame() {
 }
 
 function birdPos() {
-    gravity+= .08;
+    gravity+= .24;
     birdBottom -= gravity**2;
     bird.style.bottom = birdBottom + "px";
     bird.style.left = birdLeft + "px";
@@ -76,12 +76,12 @@ function control(e){
 
 function jump() {
     if (birdBottom < 500) {
-    birdBottom += 100;
-    gravity = .2;
+    birdBottom += 90;
+    gravity = .45;
     }
     else if (birdBottom < 600) {
         birdBottom += 600 - birdBottom;
-        gravity = .2;
+        gravity = .45;
     }
     console.log(birdBottom);
 }
