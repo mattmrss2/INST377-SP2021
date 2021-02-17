@@ -9,15 +9,13 @@
     border: 3px solid black;
 }
 .sky {
-    /* background-image: url("images/fb-game-background.png"); */
-    background-color: lightblue;
+    background-image: url("images/fb-game-background.png");
     width:450px;
     height: 655px;
     position: absolute;
 }
 .ground {
-    /* background-image:url("images/bottom-background.png"); */
-    background-color:burlywood;
+    background-image:url("images/bottom-background.png");
     width: 450px;
     height: 150px;
     position: absolute;
@@ -25,8 +23,7 @@
     z-index: 100
 }
 .bird {
-    /* background-image: url("images/flappy-bird.png"); */
-    background-color: yellow;
+    background-image: url("images/flappy-bird.png");
     height:60px;
     width:60px;
     position: absolute;
@@ -34,8 +31,7 @@
     bottom: 325px;
 }
 .obstacle {
-    /* background-image:url("images/flappybird-pipe.png"); */
-    background-color: lightgreen;
+    background-image:url("images/flappybird-pipe.png");
     width: 80px;
     height: 250px;
     position:absolute;
