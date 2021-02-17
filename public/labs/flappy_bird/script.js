@@ -36,7 +36,7 @@ function startGame() {
     bird.style.bottom = "325px"
     bird.style.left = "195px"
     console.log("biiii", bird.style.bottom)
-    birdtimerId = setInterval(birdPos, 30)
+    birdtimerId = setInterval(birdPos, 100)
     genObstTimer = setInterval(genObstacle, 1200)
     
     gamePrompt.innerHTML = ""
