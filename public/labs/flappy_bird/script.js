@@ -55,7 +55,7 @@ function birdPos() {
 }
     
 function control(e){
-    console.log("cont entered", e.keyCode, " : ", isGameStart, isgameOver)
+    
     if (e.keyCode === 32 && isGameStart === false && isgameOver === false) {
         startGame();
         
