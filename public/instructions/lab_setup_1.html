@@ -1,0 +1,161 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab Setup for INST377</title>
+    <link rel="stylesheet" href="../base_style.css">
+  </head>
+  <body>
+    <h1>
+      Welcome to INST377!
+    </h1>
+    <p>
+      This article is to help you get set up with
+      a development environment that will let you test your own labs to see
+      whether you're doing it right, before you submit your work. It's a
+      separate article from the main lab assignments because some of you will
+      have gotten into the course late, and will need a reference for setting
+      up.
+    </p>
+    <p>
+      INST377 is a technical course about human problems. This means
+      that,&nbsp;more than anything else, INST377 is about learning to be
+      comfortable with new, potentially frustrating technical experiences. In
+      this course, you will be given professional tools, which should help a lot
+      with basic problems in learning to code. Those tools have some
+      expectations with them, though, notably that you're
+      <strong>willing to read a lot</strong>, install things, and be very
+      comfortable with things simply not working the first time.
+    </p>
+    <p>
+      <strong
+        >Most of programming is debugging and very carefully following
+        instructions.</strong
+      ><strong><br /></strong>
+    </p>
+    <p>
+      The following steps will be a little tricky, and need to be done in order,
+      or you will not be able to submit your labs for this class. If you do not
+      submit your labs, you can't get credit for them - but more importantly,
+      you won't be able to practice your debugging before your group project.
+    </p>
+    <p>Let's do this together.</p>
+    <ol>
+      <li>
+        Install the software listed in the Required Course Software page.
+        <ul>
+          <li>
+            <a
+              title="Required &amp; Recommended Software List"
+              href="https://umd.instructure.com/courses/1299907/pages/required-and-recommended-software-list"
+              data-api-endpoint="https://umd.instructure.com/api/v1/courses/1299907/pages/required-and-recommended-software-list"
+              data-api-returntype="Page"
+              >Required Software List</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li><strong>Your node installation must be above version 14</strong></li>
+    </ol>
+    <ul>
+      <li>
+        &nbsp;To check your version of Node.js, open a Terminal in VSCode, and
+        type the command<span>&nbsp;</span
+        ><span>node --version<br /></span>Press Enter.
+      </li>
+      <li>
+        It should report a number higher than 13.2 - like so:<br /><br /><img
+          style="font-size: 1rem"
+          src="https://umd.instructure.com/courses/1299907/files/59573191/download?wrap=1"
+          alt="node_terminal"
+          data-api-endpoint="https://umd.instructure.com/api/v1/courses/1299907/files/59573191"
+          data-api-returntype="File"
+        />
+      </li>
+    </ul>
+    <p><strong>Part 1 - Getting Set Up</strong></p>
+    <ul>
+      <li>
+        Follow the instructions in
+        <a
+          title="Cloning And Updating A Repository"
+          href="https://umd.instructure.com/courses/1299907/pages/cloning-and-updating-a-repository"
+          data-api-endpoint="https://umd.instructure.com/api/v1/courses/1299907/pages/cloning-and-updating-a-repository"
+          data-api-returntype="Page"
+          >Cloning And Updating A Repository</a
+        >
+        to fork a copy of the lab repository to your own account, and then clone
+        a copy of that repository to your desktop.
+      </li>
+    </ul>
+    <p><strong>Part 2 - Installing Your Lab Space</strong></p>
+    <ul>
+      <li>
+        Open your<span>&nbsp;</span><strong>lab repository</strong
+        ><span>&nbsp;</span>in VSCode using Github Desktop
+        <ul>
+          <li>
+            You should see something like this image in your VSCode client<br /><br /><img
+              src="https://umd.instructure.com/courses/1299907/files/59573208/preview"
+              alt="basic_lab_folder.png"
+              width="240"
+              height="272"
+              data-api-endpoint="https://umd.instructure.com/api/v1/courses/1299907/files/59573208"
+              data-api-returntype="File"
+            />
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Important</strong>:
+        <ul>
+          <li>
+            Edit your <span style="background-color: #ccffcc">.env</span> file
+            to contain your name and email
+          </li>
+          <li>ie: NAME="your name" becomes NAME="Alex Leitch"</li>
+        </ul>
+      </li>
+      <li>
+        Open a terminal window in your VSCode editor by clicking "Terminal &gt;
+        New Terminal" in your menus.
+      </li>
+      <li>
+        Type<span>&nbsp;</span
+        ><span style="background-color: #ccffcc">npm install</span>. The results
+        should look sort of like this:<br /><br /><span
+          ><img
+            src="https://umd.instructure.com/courses/1299907/files/59573194/download?wrap=1"
+            alt="npm_install_results"
+            width="537"
+            height="249"
+            data-api-endpoint="https://umd.instructure.com/api/v1/courses/1299907/files/59573194"
+            data-api-returntype="File"
+        /></span>
+      </li>
+      <li>
+        Everything you need to test your work should now exist on your computer.
+      </li>
+      <li>
+        If you have trouble with <strong>any</strong> stage of this, please ask
+        for help in the class Discord! Your peers probably ran into the same
+        issue, there are a lot of you.
+      </li>
+      <li>
+        Remember to screencap your problem when you're asking for help. Clear
+        explanations get you better answers.
+      </li>
+    </ul>
+    <p>
+      <strong
+        >NEXT UP:
+        <a
+          href="https://umd.instructure.com/courses/1299907/pages/working-with-cypress-to-test-your-labs"
+          data-api-endpoint="https://umd.instructure.com/api/v1/courses/1299907/pages/working-with-cypress-to-test-your-labs"
+          data-api-returntype="Page"
+          >Working With Cypress To Test Your Labs</a
+        ></strong
+      >
+    </p>
+  </body>
+</html>
