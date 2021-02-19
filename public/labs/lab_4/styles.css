@@ -1,7 +1,16 @@
+
 * {
     font-family: helvetica;
+    font-size: 16px;
+    color: #202A25
+}
+body {
+    background: #ECC8AE
 }
 
+h1 {
+    font-size: 40px;
+}
 .title-head {
     width:100%;
     text-align:center;
@@ -9,14 +18,17 @@
 .bigolebox {
     width: 75%;
     max-width:1000px;
-    position:absolute;
-    left: 20%;
-    top: 15%; 
+    margin: 0 auto;
+    margin-top: 70px;
 }
 .bigolebox * {
     box-sizing: border-box;
+    
 }
 
+.flex-outer li label, .flex-outer li p {
+    font-weight: 600;
+}
 .flex-outer, .flex-inner {
     list-style-type: none;
     padding: 0;
@@ -30,13 +42,15 @@
     flex: 1 0 120px;
     max-width: 220px;
 }
+.flex-outer > li:not(:last-child) {
+    margin-bottom: 20px;
+}
 
 .flex-outer > li > label + *, .flex-inner {
     flex: 1 0 220px;
 }
 
 .flex-outer li button {
-    border: none;
     text-transform: uppercase;
     border-radius: 6px;
     padding: 10px 20px;
@@ -49,4 +63,11 @@
 }
 .flex-inner {
     justify-content: space-between;
+    padding: 0 8px;
+}
+
+.flex-outer li input:not([type='checkbox']), .flex-outer li textarea {
+    padding: 15px;
+    border: none;
+    background: #D7907B;
 }
