@@ -3,32 +3,32 @@
     <head>
         <meta charset = "utf-8">
         <link rel="stylesheet" href="styles.css" type="text/css">
-        <title>Morrison Lab 4</title>
+        <title>Matthew Morrison Lab 4</title>
     </head>
     <body>
         <h1 class = "title-head">Matthew Morrison's Lab 4</h1>
         <div class="bigolebox">
-        <form>
+        <form action = "/api" method="post">
             <ul class = "flex-outer">
                 <li>
-                    <label for = "first_name">First Name</label>
-                    <input type = "text" id = "first_name" placeholder = "First name"/>
+                    <label for = "fname">First Name</label>
+                    <input type = "text" id = "fname" placeholder = "First name" name="name"/>
                 </li>
                 <li>
-                    <label for="last_name">Last Name</label>
-                    <input type = "text" id = "last_name" placeholder = "Last name"/>
+                    <label for="lname">Last Name</label>
+                    <input type = "text" id = "lname" placeholder = "Last name" name="name"/>
                 </li>
                 <li>
                     <label for = "email">E-mail</label>
-                    <input type = "email" id = "email" placeholder = "E-mail address"/>
+                    <input type = "email" id = "email" placeholder = "E-mail address" name="email"/>
                 </li>
                 <li>
                     <label for = "phone"> Phone Number</label>
-                    <input type = "tel" id = "phone" placeholder = "Phone number"/>
+                    <input type = "tel" id = "phone" placeholder = "Phone number" name="tele"/>
                 </li>
                 <li>
                     <label for = "message">Message</label>
-                    <textarea rows ="5" id = "message" placeholder="Message"></textarea>
+                    <textarea rows ="5" cols = '33' id = "message" placeholder="Message" name="message"></textarea>
                 </li>
                 <li>
                     <p>Age</p>
@@ -36,31 +36,32 @@
                         
                         <li>
                         <label for="under18" class = "radio-label">Under 18</label>
-                        <input id = "under18" name="age" type = "radio" value="Under18"/>
+                        <input id = "under18" name="age" type = "checkbox" value="Under18"/>
                         </li>
                         <li>
                         <label for="18-30" class = "radio-label">18-30</label>
-                        <input id="18-30" name="age" type="radio" value="18-30"/>
+                        <input id="18-30" name="age" type="checkbox" value="18-30"/>
                         </li>
                         <li>
                         <label for="31-50" class="radio-label">31-50</label>
-                        <input id="31-50" name="age" type="radio" value="31-50"/>
+                        <input id="31-50" name="age" type="checkbox" value="31-50"/>
                         </li>
                         <li>
                         <label for="51-70" class="radio-label">51-70</label>
-                        <input id="51-70" name="age" type="radio" value="51-70"/>
+                        <input id="51-70" name="age" type="checkbox" value="51-70"/>
                         </li>
                         <li>
                         <label for="Over70" class = "radio-label">Over 70</label>
-                        <input id="Over70" name="age" type="radio" value="Over70"/>
+                        <input id="Over70" name="age" type="checkbox" value="Over70"/>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <button type="submit">Submit</button>
+                    <button type="submit" name ="submit" id = "submit">Submit</button>
                 </li>
             </ul>
         </form>
         </div>
+
     </body>
 </html>
