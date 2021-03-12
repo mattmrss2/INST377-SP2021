@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 async function windowActions() {
 
@@ -65,6 +66,21 @@ async function windowActions() {
         displayMatches(evt)
     });
     
+=======
+function mapInit() {
+  // follow the Leaflet Getting Started tutorial here
+  return map;
+}
+
+async function dataHandler(mapObjectFromFunction) {
+  // use your assignment 1 data handling code here
+  // and target mapObjectFromFunction to attach markers
+}
+
+async function windowActions() {
+  const map = mapInit();
+  await dataHandler(map);
+>>>>>>> 44bd7ef0cd348ea6aef94554251d3fe6a0efbcf4
 }
 
 window.onload = windowActions;
