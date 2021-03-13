@@ -8,13 +8,23 @@ function mapInit() {
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
-    accessToken: 'your.mapbox.access.token'
+    accessToken: 'pk.eyJ1IjoibWF0dG1yc3MiLCJhIjoiY2ttNXF5bW44MGgyYTJ2cWxvdWs4NTdpeSJ9.w3Sk1_8cEyz5pHbP7ASBVQ'
   }).addTo(mymap);
   return mymap;
 }
 
 async function dataHandler(mapObjectFromFunction) {
   // use your assignment 1 data handling code here
+  const endpoint = "https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json"
+  const request = await fetch(endpoint)
+  const restaurants = await request.json()
+  console.log(restaurants)
+  function findMatches(ZipToMatch, restaurants){
+   return restaurants.filter(place => {
+     const regex = new RegExp(ZipToMatch, 'gi')
+     return place.zip.match(regex)
+    });
+  }
   // and target mapObjectFromFunction to attach markers
 }
 
