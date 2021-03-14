@@ -1,0 +1,20 @@
+#mapid{
+    height: 540px;
+    border-radius: 15px;
+}
+#search{
+    max-width: 570px;
+}
+.result {
+    background-image: linear-gradient(#DCF2B0, #C2EABD);
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+html {
+    background-color: #C2EABD;
+}
