@@ -28,7 +28,7 @@ async function dataHandler(mapObjectFromFunction) {
   //   });
   // }
 
-    const form = document.querySelector(".userform");
+    const form = document.querySelector(".search-form");
     const search = document.querySelector("#search");
     const list = document.querySelector(".results")
     const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
@@ -41,6 +41,7 @@ async function dataHandler(mapObjectFromFunction) {
       const filtered = data.filter((record) => record.zip.includes(search.value) && record.geocoded_column_1);
       const firstFive = filtered.slice(0,5)
       console.log(search.value)
+      list.innerHTML = ""
 
       if (search.value.length < 1) {
         console.log(search)
