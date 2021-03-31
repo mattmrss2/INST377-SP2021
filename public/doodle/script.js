@@ -93,7 +93,6 @@ function fall(){
     downTimerId = setInterval(function () {
         jumperBottom -= 5;
         jumper.style.bottom = jumperBottom + 'px';
-        console.log('whoa!')
         if (jumperBottom <= 0){
             gameOver();
         }
