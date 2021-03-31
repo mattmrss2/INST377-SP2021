@@ -1,0 +1,30 @@
+.grid{
+    width: 400px;
+    height: 600px;
+    background-color: lightgray;
+    position: relative;
+}
+
+.jumper {
+    width: 50px;
+    height: 80px;
+    background-color:lightgreen;
+    position: absolute;
+}
+
+.platform {
+    width: 80px;
+    height: 15px;
+    background-color: green;
+    position: absolute;
+}
+
+.score {
+    position: absolute;
+    font-size: 75px;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    font-family: impact;
+}
+
