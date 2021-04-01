@@ -50,7 +50,6 @@ function spawnPlats(){
             let newPlatBottom = 200 + i * platGap;
             let newPlat = new Platform(newPlatBottom)
             plats.push(newPlat);
-            console.log('ass')
     }
 }
 
